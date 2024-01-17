@@ -51,8 +51,8 @@ const TimelineSection = styled.div`
 const Parcours = () => {
   return (
     <section id="professional-experience">
-   <h5>Explore my Professional Credentials</h5>
-    <h2>Certification</h2>
+   <h5>My work experience as a software engineer </h5>
+    <h2>Experience</h2>
    <Container >
       <Wrapper>
         
