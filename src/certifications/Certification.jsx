@@ -1,5 +1,11 @@
-import React from 'react';
-import { Galleria } from 'primereact/galleria';
+// export default Certification;
+import ImageGallery from "react-image-gallery";
+// import stylesheet if you're not already using CSS @import
+
+import "react-image-gallery/styles/css/image-gallery.css";
+import "react-image-gallery/styles/scss/image-gallery.scss";
+
+// Images for certifications
 import image1 from "../assets/c2.png";
 import image2 from "../assets/c3.png";
 import image3 from "../assets/c4.png";
@@ -7,54 +13,43 @@ import image4 from "../assets/c5.jpeg";
 import image5 from "../assets/c6.png";
 import image6 from "../assets/c11.png";
 import image7 from "../assets/c12.png";
-
-
-
+// const images = [
+//   {  original: image1, thumbnail: image1 },
+//     { original: image2, thumbnail: image2 },
+//     {  original: image3, thumbnail: image3 },
+//     {  original: image4, thumbnail: image4 },
+//     { original: image5, thumbnail: image5 },
+//     { original: image6, thumbnail: image6 },
+//     {  original: image7, thumbnail: image7 },
+// ];
+const images = [
+  { original: image6 },
+  {  original: image7},
+  {  original: image1 },
+    { original: image2},
+    {  original: image3},
+    {  original: image4},
+    { original: image5 },
+   
+    
+];
 const Certification = () => {
-  const certifications = [
-    { id: 1, image: image1 },
-    { id: 2, image: image2 },
-    { id: 3, image: image3 },
-    { id: 4, image: image4 },
-    { id: 5, image: image5 },
-    { id: 6, image: image6 },
-    { id: 7, image: image7 },
-  ];
+  
 
-  const responsiveOptions = [
-    // Define your responsive options here
-    // Example: { breakpoint: '768px', numVisible: 3 },
-  ];
-
-  const itemTemplate = (item) => {
-    return (
-        
-      <div className="certification-image">
-        <img src={item.image} alt={`Certification ${item.id}`} />
-      </div>
-    );
-  };
+  // Customize the component or add additional settings
+ 
 
   return (
-    <section id="certification">
-   <h5>Explore my Professional Credentials</h5>
-    <h2>Certification</h2>
-   
+    <div className="certification-container">
+      <section id="certification">
+        <h5>Explore my Professional Credentials</h5>
+        <h2>Certification</h2>
+        <ImageGallery items={images} />;
+      </section>
      
-  
-   
-      <Galleria
-      className="container testimonials__container"
-        value={certifications}
-        responsiveOptions={responsiveOptions}
-        numVisible={1}
-        circular
-        style={{ maxWidth: '700px', width: '100%' }}
-        showItemNavigators
-        item={itemTemplate}
-      />
-   </section>
+    </div>
   );
 };
+
 
 export default Certification;

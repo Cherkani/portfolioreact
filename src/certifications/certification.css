@@ -1,3 +1,21 @@
+/* certification.css */
+
+.certification-container {
+  position: relative;
+}
+
+.thumbnail-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
 .container.testimonials__container {
   width: 40%;
   padding-bottom: 4rem;
@@ -52,5 +70,13 @@
 
   .client__review {
     width: var(--container-width-sm);
+  }
+  .certification-container {
+    text-align: center;
+  }
+
+  .certification-container .image-gallery {
+    display: inline-block;
+    margin: 0 auto;
   }
 }
