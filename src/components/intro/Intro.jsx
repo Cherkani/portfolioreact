@@ -1,16 +1,22 @@
 import "./intro.css";
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+
+
+import { FaAward } from "react-icons/fa";
+import { VscFolderLibrary } from "react-icons/vsc";
 
 import {intro } from "../../translations/en/data";
-const { name,image,Icon1,title_card1,text_card1,Icon2,title_card2,text_card2,description1,description2,description3} = intro;
+const { name,image,} = intro;
 
 
 
 const Intro = () => {
+  const {t} = useTranslation("translation");
   return (
     <section id="about">
-      <h5>Get to know</h5>
+      <h5>  {t("get_to_know")}</h5>
       <h2>{name}</h2>
       <div className="container about__container">
         <div className="about__me">
@@ -21,27 +27,27 @@ const Intro = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <Icon1 className="about__icon" />
-              <h5>{title_card1}</h5>
-              <small>{text_card1}</small>
+              <FaAward className="about__icon" />
+              <h5>{t("intro.title_card1")}</h5>
+              <small>{t("intro.text_card1")}</small>
             </article>
             <article className="about__card">
-              <Icon2 className="about__icon" />
-              <h5>{title_card2}</h5>
-              <small>{text_card2}</small>
+              <VscFolderLibrary className="about__icon" />
+              <h5> {t("intro.title_card2")}</h5>
+              <small> {t("intro.text_card2")}</small>
             </article>
           </div>
           <p>
           <br />
-          {description1}
+          {t("intro.description1")}
               <br />
               <br />
-              {description2}
+              {t("intro.description2")}
             <br />
-            {description3}
+            {t("intro.description3")}
           </p>
           <a href="#contact" className="btn btn-primary">
-            Let's Talk
+          {t("talk")}
           </a>
         </div>
       </div>

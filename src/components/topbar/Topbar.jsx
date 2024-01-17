@@ -4,13 +4,23 @@ import { AiOutlineUser } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
 import { RiServiceLine } from 'react-icons/ri';
 import { BiMessageSquareDetail } from 'react-icons/bi';
-import { GoCheck } from 'react-icons/go'; // Importe l'icône GoCheck
-import { BsBriefcaseFill } from 'react-icons/bs'; // Importe l'icône BriefcaseFill
+import { GoCheck } from 'react-icons/go';
+import { BsBriefcaseFill } from 'react-icons/bs';
+import { ToggleSwitch } from '@primer/react'; // Import ToggleSwitch from @primer/react
 
 import './topbar.css';
 
+import { useTranslation } from 'react-i18next';
+
 const Topbar = () => {
   const [activeNav, setActiveNav] = useState('#home');
+
+  const { i18n } = useTranslation();
+
+  const handleLanguageToggle = () => {
+    const newLanguage = i18n.language === 'en' ? 'fr' : 'en';
+    i18n.changeLanguage(newLanguage);
+  };
   return (
     <nav>
       <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === '#home' ? 'active' : ''}><AiOutlineHome /></a>
@@ -18,10 +28,15 @@ const Topbar = () => {
       <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook /></a>
       <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><RiServiceLine /></a>
       <a href="#certification" onClick={() => setActiveNav('#certification')} className={activeNav === '#certification' ? 'active' : ''}><GoCheck /></a>
-      <a href="#professional-experience" onClick={() => setActiveNav('#professional-experience')} className={activeNav === '#professional-experience' ? 'active' : ''}><BsBriefcaseFill /></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
+      {/* <a href="#professional-experience" onClick={() => setActiveNav('#professional-experience')} className={activeNav === '#professional-experience' ? 'active' : ''}><BsBriefcaseFill /></a> */}
+      {/* <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a> */}
+     
+      <ToggleSwitch onChange={handleLanguageToggle} />
+ 
+     
     </nav>
-  )
-}
+  );
+};
 
 export default Topbar;
+

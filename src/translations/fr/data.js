@@ -23,10 +23,10 @@ import { VscFolderLibrary } from "react-icons/vsc";
 export const soloProjects = [
   {
     id: 1,
-    title: "E-commerce CRM Solution",
+    title: "Solution CRM pour le commerce électronique",
     img: IMG1,
     description:
-      "Streamline and Enhance Customer Relationship Management for E-commerce.",
+      "Optimisez et améliorez la gestion de la relation client pour le commerce électronique.",
     technologies: "Laravel | PHP | MySQL",
     // code: "https://github.com/Cherkani/-PFA-.git",
     // livedemo: "no",
@@ -34,21 +34,20 @@ export const soloProjects = [
   },
   {
     id: 1,
-    title: "Medical Faculty Management",
+    title: "Gestion de la faculté de médecine",
     img: IMG12,
     description:
-      "Mobile application and website for managing a medical faculty. Professors create assignments that students complete.",
+      "Application mobile et site web pour la gestion d'une faculté de médecine. Les professeurs créent des devoirs que les étudiants complètent.",
     technologies: "React | Java Native | Spring Security",
     code: "https://github.com/Cherkani/tooth_react_springsecurity",
     video: "https://github.com/Cherkani/tooth_react_springsecurity",
   },
-
   {
     id: 2,
-    title: "Restaurant Finder and Filtering Project",
+    title: "Projet de recherche et de filtrage de restaurants",
     img: IMG3,
     description:
-      "Discovering and Locating the Perfect Dining Spot with the MERN Stack.",
+      "Découvrez et localisez l'endroit idéal pour dîner avec la pile MERN.",
     technologies: "MERN Stack | MongoDB | Express.js | React | Node.js",
     code: "https://github.com/Cherkani/restaurant.git",
     livedemo: "https://restaurant-cherkani.vercel.app/",
@@ -59,18 +58,18 @@ export const soloProjects = [
     title: "Profsswap",
     img: IMG2,
     description:
-      "Empowering University Professor Exchanges with a Mobile Application.",
-    technologies: "React Native | Mobile Development",
+      "Donnez du pouvoir aux échanges de professeurs d'université avec une application mobile.",
+    technologies: "React Native | Développement mobile",
     code: "https://github.com/Cherkani/ProfSwap",
     //  livedemo: "no",
     video: "https://github.com/Cherkani/ProfSwap",
   },
   {
     id: 4,
-    title: "CRUD Management System for Machines in Rooms",
+    title: "Système de gestion CRUD pour les machines en salles",
     img: IMG4,
     description:
-      "Efficiently Manage Machines in Rooms with Laravel-powered CRUD System.",
+      "Gérez efficacement les machines en salles avec un système CRUD alimenté par Laravel.",
     technologies: "Laravel | PHP | MySQL",
     code: "https://github.com/Cherkani/laravel-first-project",
     // livedemo: "no",
@@ -81,8 +80,8 @@ export const soloProjects = [
     title: "Pokédex",
     img: IMG5,
     description:
-      "Explore the World of Pokémon with the React Native-Powered Pokédex.",
-    technologies: "React Native | Mobile Development",
+      "Explorez le monde des Pokémon avec le Pokédex alimenté par React Native.",
+    technologies: "React Native | Développement mobile",
     code: "https://github.com/Cherkani/PokeDex-RN-App.git",
     livedemo:
       "https://expo.dev/@aymen108/PokeDex-RN-App?serviceType=classic&distribution=expo-go",
@@ -90,42 +89,42 @@ export const soloProjects = [
   },
   {
     id: 6,
-    title: "Library Management",
+    title: "Gestion de bibliothèque",
     img: IMG6,
     description:
-      "Efficient Library Management for Seamless Book Borrowing and Returns.",
-    technologies: "Custom | Library Management System",
+      "Gestion efficace de la bibliothèque pour des emprunts et retours de livres sans heurts.",
+    technologies: "Personnalisé | Système de gestion de bibliothèque",
     code: "https://github.com/Cherkani/JAVA_GESTION_librairie",
     //  livedemo: "no",
     video: "https://github.com/Cherkani/JAVA_GESTION_librairie",
   },
   {
     id: 7,
-    title: "Fuel Depot Shortcut Project",
+    title: "Projet d'optimisation du raccourci du dépôt de carburant",
     img: IMG7,
     description:
-      "Optimizing Travel with the Python-powered Fuel Depot Shortcut Project.",
-    technologies: "Python | Algorithm Optimization",
+      "Optimisation des déplacements avec le projet de raccourci du dépôt de carburant alimenté par Python.",
+    technologies: "Python | Algorithmes d'optimisation ",
     //  code: "no",
     //  livedemo: "no",
     video: "https://github.com/Cherkani/fuel_short_path_first_project_python",
   },
   {
     id: 8,
-    title: "CRUD Machines Management Jsf EJB",
+    title: "Gestion CRUD des machines avec JSF et EJB",
     img: IMG8,
     description:
-      "Designed a Machines Management system utilizing JavaServer Faces (JSF) and Enterprise JavaBeans (EJB). This CRUD focuses on streamlined employee machine allocation and includes a simple graph for visualizing key data points.",
+      "Conception d'un système de gestion des machines utilisant JavaServer Faces (JSF) et Enterprise JavaBeans (EJB). Ce CRUD se concentre sur l'allocation simplifiée des machines aux employés et inclut un graphique simple pour visualiser les points de données clés.",
     technologies: "JSF | Hibernate | EJB",
     code: "https://github.com/Cherkani/Gestion_Machines_Jsf_EJB",
     // livedemo: "no",
     video: "https://github.com/Cherkani/Gestion_Machines_Jsf_EJB",
   },
   {
-    title: "CRUD Student Management System",
+    title: "Système de gestion CRUD des étudiants",
     img: IMG9,
     description:
-      " Developed a Student Management System using Spring Boot, Swagger, and React. Includes role management, student information, and department management. Implemented mobile CRUD operations with Volley.",
+      "Développement d'un système de gestion des étudiants avec Spring Boot, Swagger et React. Comprend la gestion des rôles, des informations sur les étudiants et la gestion des départements. Mise en œuvre des opérations CRUD mobiles avec Volley.",
     technologies: "Spring Boot | Swagger | React | Volley",
     code: "https://github.com/Cherkani/Gestion_etudiant_sringBoot_swagger_mobile_React",
     // livedemo: "no",
@@ -134,10 +133,10 @@ export const soloProjects = [
       "https://github.com/Cherkani/Gestion_etudiant_sringBoot_swagger_mobile_React",
   },
   {
-    title: "Crud Hotel Management System",
+    title: "Système de gestion CRUD des hôtels",
     img: IMG10,
     description:
-      "Implemented a Hotel Management System using EJB, JSP, Hibernate, and Wildfly. Focuses on CRUD for cities and hotels, ensuring seamless data handling. Utilizes Wildfly as the application server.",
+      "Mise en place d'un système de gestion des hôtels avec EJB, JSP, Hibernate et Wildfly. Axé sur le CRUD pour les villes et les hôtels, assurant une manipulation transparente des données. Utilise Wildfly comme serveur d'application.",
     technologies: "EJB | JSP | Hibernate | Wildfly",
     code: "https://github.com/Cherkani/EJB_JSP_Hibernate_widfly_hotel_Gestion",
 
@@ -146,9 +145,9 @@ export const soloProjects = [
     video: "https://github.com/Cherkani/EJB_JSP_Hibernate_widfly_hotel_Gestion",
   },
   {
-    title: "Inventory Management System",
+    title: "Système de gestion des stocks",
     description:
-      "Designed an Inventory Management System with Hibernate and JSP featuring CRUD operations. Allows listing products, retrieving orders, and managing categories. Emphasizes establishing relationships between orders .",
+      "Conception d'un système de gestion des stocks avec Hibernate et JSP comprenant des opérations CRUD. Permet de répertorier les produits, de récupérer les commandes et de gérer les catégories. Met l'accent sur l'établissement de relations entre les commandes.",
     img: IMG11,
     technologies: "Hibernate | JSP",
     code: "https://github.com/Cherkani/Hibernate_JSP_CRUD____Gestion_de_Stock",
@@ -159,24 +158,23 @@ export const soloProjects = [
 ];
 
 //intro
-
 export const intro = {
   name: "Cherkani Aymen",
   image: img,
 
   Icon1: FaAward,
-  title_card1: "University",
+  title_card1: "Université",
   text_card1: "Ensaj",
   Icon2: VscFolderLibrary,
-  title_card2: "Program",
-  text_card2: "Computer Science Engineer (2ITE)",
+  title_card2: "Programme",
+  text_card2: "Ingénieur en informatique (2ITE)",
 
   description1:
-    "- I am Cherkani Aymen, a fourth-year engineering student at ENSAJ (École Nationale des Sciences Appliquées) in Morocco. I have a strong passion for computer science and am deeply motivated to enhance my skills and work on challenging projects.",
+    "- Je suis Cherkani Aymen, étudiant en génie de quatrième année à l'ENSAJ (École Nationale des Sciences Appliquées) au Maroc. J'ai une forte passion pour l'informatique et suis profondément motivé pour améliorer mes compétences et travailler sur des projets stimulants.",
   description2:
-    "- Equipped with a strong foundation in design, programming, and database management, I am driven by motivation, curiosity, and adaptability to new environments.",
+    "- Doté d'une solide base en conception, programmation et gestion de bases de données, je suis animé par la motivation, la curiosité et l'adaptabilité à de nouveaux environnements.",
   description3:
-    " - Currently searching for a one-month internship in development, either in-person or online.",
+    " - Actuellement à la recherche d'un stage d'un mois en développement, que ce soit en personne ou en ligne.",
 };
 
 export const skills = [
@@ -410,14 +408,14 @@ export const experiences = [
   {
     id: 0,
     image: Wafasalaf,
-    role: "Business Intelligence Intern",
+    role: "Stagiaire en Intelligence d'Affaires",
     company: "Wafasalaf",
-    date: "July 2023 - August 2023",
-    desc: "Conducted meetings with stakeholders to comprehend business requirements for BI solutions. Employed ETL tools to extract, transform, and load data from diverse sources into the database. Collaborated with the team to identify key performance indicators (KPIs) and craft visualizations for effective monitoring. Developed interactive Power BI dashboards, enabling stakeholders to make data-driven decisions.",
+    date: "Juillet 2023 - Août 2023",
+    desc: "Mené des réunions avec les parties prenantes pour comprendre les besoins métier en matière de solutions BI. Utilisé des outils ETL pour extraire, transformer et charger des données provenant de sources diverses dans la base de données. Collaboré avec l'équipe pour identifier les indicateurs clés de performance (KPI) et créer des visualisations pour un suivi efficace. Développé des tableaux de bord interactifs Power BI, permettant aux parties prenantes de prendre des décisions basées sur les données.",
     skills: [
       "Talend Open Studio",
       "Microsoft Power BI",
-      "Python (programming language)",
+      "Python (langage de programmation)",
       "MySQL",
     ],
     // doc: "",

@@ -10,10 +10,10 @@ import Topbar from "./components/topbar/Topbar";
 import Parcours from "./components/parcourtravail/Parcours";
 import Cetification from "./certifications/Certification"
 
-
 const App = () => {
   return (
     <>
+
       <Header />
       <Topbar />
       <Intro />

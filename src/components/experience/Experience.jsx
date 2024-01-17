@@ -1,12 +1,13 @@
 import React from "react";
 //import "./experience.css";
 import TechnicalSkills from "./TechnicalSkills";
-
+import { useTranslation } from "react-i18next";
 const Experience = () => {
+  const { t } = useTranslation("translation");
   return (
     <section id="experience">
-      <h5>The Skills I Have</h5>
-      <h2>Skills</h2>
+      <h5>{t("skills.h5")} </h5>
+      <h2>{t("skills.h2")}</h2>
       {/* <div className="container experience__container"> */}
       <div>
         <TechnicalSkills/>

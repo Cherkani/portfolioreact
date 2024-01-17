@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { useTranslation } from "react-i18next";
+import { experiences as experiencesData } from "../../translations/en/data";
 const Document = styled.img`
     display: none;
     height: 70px;
@@ -146,43 +147,45 @@ const Skill = styled.div`
 
 
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience ,image2}) => {
+    const { t } = useTranslation("translation");
+    console.log('Image Path:', experience.image);
     return (
         <Card>
-            <Top>
-                <Image src={experience.img} />
-                <Body>
-                    <Role>{experience.role}</Role>
-                    <Company>{experience.company}</Company>
-                    <Date>{experience.date}</Date>
-                </Body>
-            </Top>
-            <Description>
-                {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
+          <Top>
+        <Image src={image2} />
 
-                }
-                {experience?.skills &&
-                    <>
-                        <br />
-                        <Skills>
-                            <b>Skills:</b>
-                            <ItemWrapper>
-                                {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
-                                ))}
-                            </ItemWrapper>
-                        </Skills>
-                    </>
-                }
-            </Description>
-            {experience.doc &&
-                <a href={experience.doc} target="new">
-                    <Document src={experience.doc} />
-                </a>
-            }
+            <Body>
+             
+              <Role>{experience.role}</Role>
+              <Company>{experience.company}</Company>
+              <Date>{experience.date}</Date>
+            </Body>
+          </Top>
+          <Description>
+            {experience?.desc && <Span>{experience.desc}</Span>}
+    
+            {experience?.skills && (
+              <>
+                <br />
+                <Skills>
+                  <b>{t("Skills")}:</b>
+                  <ItemWrapper>
+                    {experience?.skills?.map((skill, index) => (
+                      <Skill key={index}>• {skill}</Skill>
+                    ))}
+                  </ItemWrapper>
+                </Skills>
+              </>
+            )}
+          </Description>
+          {experience.doc && (
+            <a href={experience.doc} target="_blank" rel="noopener noreferrer">
+              <Document src={experience.doc} />
+            </a>
+          )}
         </Card>
-    )
-}
-
-export default ExperienceCard
+      );
+    };
+    
+    export default ExperienceCard;

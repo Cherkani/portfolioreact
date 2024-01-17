@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from '@mui/lab';
 
+import { experiences as experiencesData } from "../../translations/en/data";
 import ExperienceCard from "./ExperienceCard";
-import { experiences } from "../../translations/en/data";
-import "./parcours.css"
+import { useTranslation } from "react-i18next";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,10 +34,6 @@ const Wrapper = styled.div`
   }
 `;
 
-
-
-
-
 const TimelineSection = styled.div`
   width: 100%;
   max-width: 1000px;
@@ -49,35 +46,35 @@ const TimelineSection = styled.div`
 `;
 
 const Parcours = () => {
+  const [t, i18n] = useTranslation("translation");
+const experiences = t("experiences", { returnObjects: true });
   return (
     <section id="professional-experience">
-   <h5>My work experience as a software engineer </h5>
-    <h2>Experience</h2>
-   <Container >
-      <Wrapper>
-        
-        
-        <TimelineSection>
-          <Timeline>
-            {experiences.map((experience, index) => (
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="secondary" />
-                  {index !== experiences.length - 1 && (
-                    <TimelineConnector style={{ background: "#854CE6" }} />
-                  )}
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <ExperienceCard experience={experience} />
-                </TimelineContent>
-              </TimelineItem>
-            ))}
-          </Timeline>
-        </TimelineSection>
-      </Wrapper>
-    </Container>
-    </section>
+      <h5>{t("experience.h5")}</h5>
+      <h2>{t("experience.h2")}</h2>
+      <Container>
+        <Wrapper>
+          <TimelineSection>
+            <Timeline>
+              {experiences.map((experience, index) => (
+                <TimelineItem key={index}>
+                  <TimelineSeparator>
+                    <TimelineDot variant="outlined" color="secondary" />
+                    {index !== t("experiences").length - 1 && (
+                      <TimelineConnector style={{ background: "#854CE6" }} />
+                    )}
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <ExperienceCard experience={experience} image2={experiencesData[index].image}  />
 
+                  </TimelineContent>
+                </TimelineItem>
+              ))}
+            </Timeline>
+          </TimelineSection>
+        </Wrapper>
+      </Container>
+    </section>
   );
 };
 

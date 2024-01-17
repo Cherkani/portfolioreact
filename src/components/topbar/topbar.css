@@ -31,3 +31,23 @@ nav a.active {
   background: var(--color-bg);
   color: var(--color-white);
 }
+/* Add these styles to your topbar.css file */
+
+.language-switcher {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.language-toggle {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.language-toggle:hover {
+  background: rgba(0, 0, 0, 0.3);
+}

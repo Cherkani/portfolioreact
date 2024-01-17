@@ -1,20 +1,22 @@
-// Update the code in your React component
-// Add these imports at the beginning of your file if not already present
 import React from "react";
-import { soloProjects } from "../../translations/en/data";
+import { useTranslation } from "react-i18next";
+import { soloProjects as soloProjectsData } from "../../translations/en/data";
 import "./portfolio.css";
 
 const Portfolio = () => {
+  const { t } = useTranslation("translation");
+  const soloProjects = t("soloProjects", { returnObjects: true }) || [];
+
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>{t("portfolio.h5")}</h5>
+      <h2>{t("portfolio.h2")}</h2>
 
       <div className="container portfolio__container">
-        {soloProjects.map((pro) => (
-          <article className="portfolio__item" key={pro.id}>
+        {soloProjects.map((pro, index) => (
+          <article className="portfolio__item" key={index}>
             <div className="portfolio__item-image">
-              <img src={pro.img} alt={pro.title} />
+              <img src={soloProjectsData[index].img} alt={pro.title} />
             </div>
             <div className="portfolio__item-content">
               <h3>{pro.title}</h3>
@@ -32,12 +34,12 @@ const Portfolio = () => {
                   Code
                 </a>
               )}
-              
+
               {pro.video && (
                 <a
                   href={pro.video}
                   target="_blank"
-                  className="btn btn-secondary " // Add class for Video
+                  className="btn btn-secondary" // Add class for Video
                   rel="noreferrer"
                 >
                   Video & Screens

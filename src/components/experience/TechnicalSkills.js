@@ -9,8 +9,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCogs } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const TechnicalSkills = () => {
+  const { t } = useTranslation("translation");
+
   const frontendSkills = skills.filter((el) => el.tag === "frontend");
   const backendSkills = skills.filter((el) => el.tag === "backend");
   const platformSkills = skills.filter((el) => el.tag === "platform");
@@ -64,7 +67,8 @@ const TechnicalSkills = () => {
           </Flex>
           <Flex>
             <Heading size="lg">
-              Mobile<span className="themeText"></span>
+              {t("skills.s2")}
+              <span className="themeText"></span>
             </Heading>
             <Box>
               {mobileSkills.map((skill) => (
@@ -82,7 +86,7 @@ const TechnicalSkills = () => {
             </Box>
           </Flex>
           <Flex>
-            <Heading size="lg">Programming Languages</Heading>
+            <Heading size="lg">{t("skills.s3")} </Heading>
             <Box>
               {programmingLanguagesSkills.map((skill) => (
                 <Box key={skill.title} className="skill" data-aos="zoom-in">
@@ -96,7 +100,7 @@ const TechnicalSkills = () => {
           </Flex>
           <Flex>
             <Heading size="lg">
-              Platforms <span className="themeText">& Tools</span>
+              {t("skills.s4")} <span className="themeText"></span>
             </Heading>
             <Box>
               {platformSkills.map((skill) => (
@@ -111,7 +115,7 @@ const TechnicalSkills = () => {
           </Flex>
           <Flex>
             <Heading size="lg">
-              Buisness <span className="themeText">Intelligence</span>
+              {t("skills.s5")} <span className="themeText"></span>
             </Heading>
             <Box>
               {BiSkills.map((skill) => (
