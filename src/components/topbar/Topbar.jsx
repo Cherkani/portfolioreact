@@ -11,15 +11,19 @@ import { ToggleSwitch } from '@primer/react'; // Import ToggleSwitch from @prime
 import './topbar.css';
 
 import { useTranslation } from 'react-i18next';
+import CustomToggleSwitch from './CustomToggleSwitch';
 
 const Topbar = () => {
   const [activeNav, setActiveNav] = useState('#home');
 
+  const [isFrench, setIsFrench] = useState(true);
+
   const { i18n } = useTranslation();
 
   const handleLanguageToggle = () => {
-    const newLanguage = i18n.language === 'en' ? 'fr' : 'en';
+    const newLanguage = isFrench ? 'en' : 'fr';
     i18n.changeLanguage(newLanguage);
+    setIsFrench(!isFrench);
   };
   return (
     <nav>
@@ -31,8 +35,8 @@ const Topbar = () => {
       {/* <a href="#professional-experience" onClick={() => setActiveNav('#professional-experience')} className={activeNav === '#professional-experience' ? 'active' : ''}><BsBriefcaseFill /></a> */}
       {/* <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a> */}
      
-      <ToggleSwitch onChange={handleLanguageToggle} />
- 
+      <CustomToggleSwitch onChange={handleLanguageToggle} checked={isFrench} />
+  
      
     </nav>
   );
