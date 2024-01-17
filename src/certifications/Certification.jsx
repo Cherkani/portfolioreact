@@ -22,34 +22,27 @@ import image7 from "../assets/c12.png";
 //     { original: image6, thumbnail: image6 },
 //     {  original: image7, thumbnail: image7 },
 // ];
-const images = [
-  { original: image6 },
-  {  original: image7},
-  {  original: image1 },
-    { original: image2},
-    {  original: image3},
-    {  original: image4},
-    { original: image5 },
-   
-    
-];
-const Certification = () => {
-  
 
-  // Customize the component or add additional settings
- 
+const Certification = () => {
+  const images = [
+    { original: image6 },
+    { original: image7 },
+    { original: image1 },
+    { original: image2 },
+    { original: image3 },
+    { original: image4 },
+    { original: image5 },
+  ];
 
   return (
     <div className="certification-container">
       <section id="certification">
         <h5>Explore my Professional Credentials</h5>
         <h2>Certification</h2>
-        <ImageGallery items={images} />;
+        <ImageGallery items={images} autoPlay={true} slideInterval={3000} />
       </section>
-     
     </div>
   );
 };
-
 
 export default Certification;
