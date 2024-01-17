@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useTranslation } from "react-i18next";
-import { experiences as experiencesData } from "../../translations/en/data";
 const Document = styled.img`
     display: none;
     height: 70px;

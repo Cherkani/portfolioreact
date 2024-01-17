@@ -46,7 +46,7 @@ const TimelineSection = styled.div`
 `;
 
 const Parcours = () => {
-  const [t, i18n] = useTranslation("translation");
+  const {t} = useTranslation("translation");
 const experiences = t("experiences", { returnObjects: true });
   return (
     <section id="professional-experience">

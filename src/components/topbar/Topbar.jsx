@@ -3,10 +3,10 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
 import { RiServiceLine } from 'react-icons/ri';
-import { BiMessageSquareDetail } from 'react-icons/bi';
+//import { BiMessageSquareDetail } from 'react-icons/bi';
 import { GoCheck } from 'react-icons/go';
-import { BsBriefcaseFill } from 'react-icons/bs';
-import { ToggleSwitch } from '@primer/react'; // Import ToggleSwitch from @primer/react
+//import { BsBriefcaseFill } from 'react-icons/bs';
+//import { ToggleSwitch } from '@primer/react'; // Import ToggleSwitch from @primer/react
 
 import './topbar.css';
 
