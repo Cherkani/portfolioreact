@@ -342,5 +342,9 @@
             },
             "scroll":"Scroll Down"
 
-
+      ,"getInTouch": {
+      "h5": "Get In Touch",
+      "message":" I do receive your messages and will respond asap if the valid email is provided :)"   
+    }
+  
 }

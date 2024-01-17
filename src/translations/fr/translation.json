@@ -324,5 +324,8 @@
   "s5": "Intelligence d'Affaires"
   },
   "scroll":"Défilez Vers Le Bas."
-
+ ,  "getInTouch": {
+    "h5": "Contactez-moi",
+    "message": "Je reçois vos messages et je répondrai dès que possible si une adresse e-mail valide est fournie :)"
+}      
 }

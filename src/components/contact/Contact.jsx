@@ -2,14 +2,16 @@ import "./contact.css";
 
 import React from "react";
 import { MdOutlineEmail, MdLocationCity } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  
+  const {t} = useTranslation("translation");
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
+      <h5>{t("getInTouch.h5")} </h5>
       <h5>
-        I do receive your messages and will respond asap if the valid email is
-        provided :)
+      {t("getInTouch.message")}
       </h5>
       <h2>Contact Me</h2>
 
