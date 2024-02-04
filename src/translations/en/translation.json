@@ -142,11 +142,28 @@
       "description3": "- Currently searching for a one-month internship in development, either in-person or online."
     },
     "skills": [
+
+      
+      
+      
+      {
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
+        "title": "postgre",
+        "tag": "sgbd"
+      },
+      {
+        "icon": "https://cdn-icons-png.flaticon.com/512/5969/5969096.png",
+        "title": "oracle",
+        "tag": "sgbd"
+      },
+
+
       {
         "icon": "https://cdn-icons-png.flaticon.com/512/174/174854.png",
         "title": "HTML",
         "tag": "frontend"
       },
+      
       {
         "icon": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
         "title": "CSS",
@@ -183,7 +200,7 @@
         "tag": "backend"
       },
       {
-        "icon": "https://img.icons8.com/color/512/express-js.png",
+        "icon": "https://youteam.io/blog/wp-content/uploads/2022/04/expressjs_logo.png",
         "title": "Express.js",
         "tag": "backend"
       },

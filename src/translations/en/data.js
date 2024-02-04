@@ -181,6 +181,17 @@ export const intro = {
 
 export const skills = [
   {
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
+    title: "postgre",
+    tag: "sgbd",
+  },
+  {
+    icon: "https://cdn-icons-png.flaticon.com/512/5969/5969096.png",
+    title: "oracle",
+    tag: "sgbd",
+  },
+
+  {
     icon: "https://cdn-icons-png.flaticon.com/512/174/174854.png",
     title: "HTML",
     tag: "frontend",
@@ -188,11 +199,6 @@ export const skills = [
   {
     icon: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
     title: "CSS",
-    tag: "frontend",
-  },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
-    title: "JavaScript",
     tag: "frontend",
   },
 
@@ -260,14 +266,33 @@ export const skills = [
   {
     icon: "https://img.icons8.com/color/512/mongodb.png",
     title: "MongoDB",
-    tag: "backend",
+    tag: "sgbd",
   },
   {
     icon: "https://img.icons8.com/fluency/240w/mysql-logo.png",
     title: "MySql",
-    tag: "backend",
+    tag: "sgbd",
   },
-
+  {
+    icon: "https://cdn-icons-png.flaticon.com/256/5968/5968364.png",
+    title: "Sql Server",
+    tag: "sgbd",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Apache-cassandra-icon.png",
+    title: "cassandra",
+    tag: "sgbd",
+  },
+  {
+    icon: "https://static-00.iconduck.com/assets.00/neo4j-icon-452x512-b63ajo4a.png",
+    title: "neo4j",
+    tag: "sgbd",
+  },
+  {
+    icon: "https://seeklogo.com/images/H/hbase-logo-386B408382-seeklogo.com.png",
+    title: "hbase",
+    tag: "sgbd",
+  },
   // {
   // 	icon: "https://img.icons8.com/?size=512&id=33039&format=png",
   // 	title: "AWS",
@@ -317,6 +342,11 @@ export const skills = [
   // 	tag: "platform",
   // },
   {
+    icon: "https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png",
+    title: "TypeScript",
+    tag: "frontend",
+  },
+  {
     icon: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
     title: "Java",
     tag: "programmingLanguages",
@@ -324,6 +354,11 @@ export const skills = [
   {
     icon: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
     title: "Python",
+    tag: "programmingLanguages",
+  },
+  {
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+    title: "JavaScript",
     tag: "programmingLanguages",
   },
   //   {
@@ -378,11 +413,7 @@ export const skills = [
     title: "Tibco Jasper",
     tag: "BI",
   },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/256/5968/5968364.png",
-    title: "Sql Server",
-    tag: "BI",
-  },
+
   {
     icon: "https://styles.redditmedia.com/t5_2ty9d/styles/communityIcon_79lgkerrg9j51.png",
     title: "SSIS",

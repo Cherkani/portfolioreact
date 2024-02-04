@@ -19,6 +19,8 @@ const TechnicalSkills = () => {
   const platformSkills = skills.filter((el) => el.tag === "platform");
   const mobileSkills = skills.filter((el) => el.tag === "mobile");
   const BiSkills = skills.filter((el) => el.tag === "BI");
+  const SGBD = skills.filter((el) => el.tag === "sgbd");
+
   const programmingLanguagesSkills = skills.filter(
     (el) => el.tag === "programmingLanguages"
   );
@@ -52,6 +54,25 @@ const TechnicalSkills = () => {
             </Heading>
             <Box>
               {backendSkills.map((skill) => (
+                <Box
+                  key={skill.title}
+                  className="skill"
+                  data-aos="zoom-in-down"
+                >
+                  <Box>
+                    <Image src={skill.icon} />
+                  </Box>
+                  <Text>{skill.title}</Text>
+                </Box>
+              ))}
+            </Box>
+          </Flex>
+          <Flex>
+            <Heading size="lg">
+              SGBD<span className="themeText"></span>
+            </Heading>
+            <Box>
+              {SGBD.map((skill) => (
                 <Box
                   key={skill.title}
                   className="skill"

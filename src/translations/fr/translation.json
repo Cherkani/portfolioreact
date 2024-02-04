@@ -124,6 +124,17 @@
   
 ,
 "skills": [
+  {
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
+    "title": "postgre",
+    "tag": "sgbd"
+  },
+  {
+    "icon": "https://cdn-icons-png.flaticon.com/512/5969/5969096.png",
+    "title": "oracle",
+    "tag": "sgbd"
+  },
+
     {
       "icon": "https://cdn-icons-png.flaticon.com/512/174/174854.png",
       "title": "HTML",
