@@ -312,7 +312,7 @@ export const skills = [
   },
   {
     icon: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
-    title: "Java",
+    title: "Java Native",
     tag: "mobile",
   },
   {
