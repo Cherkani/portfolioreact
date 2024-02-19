@@ -65,7 +65,7 @@ const experiences = t("experiences", { returnObjects: true });
                     )}
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <ExperienceCard experience={experience} image2={experiencesData[index].image}  />
+                  <ExperienceCard experience={experience} image2={experiencesData[index].image} doc2={experiencesData[index].doc} imgdoc2={experiencesData[index].imgdoc}  />
 
                   </TimelineContent>
                 </TimelineItem>

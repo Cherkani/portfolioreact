@@ -414,7 +414,8 @@ export const skills = [
   },
 ];
 //parcoours
-
+export const ducument =
+  "https://drive.google.com/file/d/1ONrX8RES6v6v83ZnVZyfzO-pO3bECp30/view";
 export const experiences = [
   {
     id: 0,
@@ -429,6 +430,6 @@ export const experiences = [
       "Python (langage de programmation)",
       "MySQL",
     ],
-    // doc: "",
+    doc: "https://drive.google.com/file/d/1ONrX8RES6v6v83ZnVZyfzO-pO3bECp30/view",
   },
 ];

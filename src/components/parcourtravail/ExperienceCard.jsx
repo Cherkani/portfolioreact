@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { useTranslation } from "react-i18next";
 const Document = styled.img`
-    display: none;
     height: 70px;
     width: fit-content;
     background-color: #000;
     border-radius: 10px;
-    &:hover{
+    display: none; /* Initial hide */
+    &:hover {
         cursor: pointer;
         opacity: 0.8;
     }
-`
+`;
 
 const Description = styled.div`
     width: 100%;
@@ -146,7 +146,7 @@ const Skill = styled.div`
 
 
 
-const ExperienceCard = ({ experience ,image2}) => {
+const ExperienceCard = ({ experience ,image2,doc2,imgdoc2}) => {
     const { t } = useTranslation("translation");
     console.log('Image Path:', experience.image);
     return (
@@ -178,10 +178,10 @@ const ExperienceCard = ({ experience ,image2}) => {
               </>
             )}
           </Description>
-          {experience.doc && (
-            <a href={experience.doc} target="_blank" rel="noopener noreferrer">
-              <Document src={experience.doc} />
-            </a>
+          {doc2 && (
+            <a href={doc2} target="_blank" rel="noopener noreferrer">
+            <Document src={imgdoc2} alt="click to see the report" />
+        </a>
           )}
         </Card>
       );

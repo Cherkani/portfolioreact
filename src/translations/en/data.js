@@ -15,6 +15,7 @@ import IMG12 from "../../assets/image12.png";
 
 //parcours
 import Wafasalaf from "../../assets/wafasalaf.png";
+import imgdoc from "../../assets/imgdoc.png";
 //intro
 import img from "../../assets/Me.webp";
 import { FaAward } from "react-icons/fa";
@@ -451,6 +452,7 @@ export const experiences = [
       "Python (programming language)",
       "MySQL",
     ],
-    // doc: "",
+    doc: "https://drive.google.com/file/d/1ONrX8RES6v6v83ZnVZyfzO-pO3bECp30/view",
+    imgdoc: imgdoc,
   },
 ];
