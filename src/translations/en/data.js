@@ -362,6 +362,12 @@ export const skills = [
     title: "JavaScript",
     tag: "programmingLanguages",
   },
+  {
+    icon: "https://my.trocaire.edu/wp-content/uploads/2016/12/pl-sql.png",
+    title: "PL/Sql",
+    tag: "programmingLanguages",
+  },
+
   //   {
   //     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png",
   //     title: "C",
