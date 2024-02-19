@@ -9,7 +9,8 @@
 
 ![image](https://github.com/Cherkani/portfolioreact/assets/124716884/ed305cd8-f910-41e5-810d-d568f4a8ca9f)
 
-![image](https://github.com/Cherkani/portfolioreact/assets/124716884/2fe78d1b-5b5f-48ef-b301-54314289731b)
+
+![Screenshot 2024-02-19 200004](https://github.com/Cherkani/portfolioreact/assets/124716884/42bab75d-9cea-4791-b6af-780292306e77)
 
 
 ![image](https://github.com/Cherkani/portfolioreact/assets/124716884/1f0eebc5-b5a4-481a-a79e-e0ccaf3cb9c8)
