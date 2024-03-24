@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../../assets/CherkaniResume.pdf';
+import CV from '../../assets/cherkani_aymen_cv_en_compressed.pdf';
 
 const CTA = (  { dowload,talk } )  => {
   return (

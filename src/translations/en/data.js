@@ -202,17 +202,18 @@ export const skills = [
     title: "CSS",
     tag: "frontend",
   },
+  {
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+    title: "JavaScript",
+    tag: "frontend",
+  },
 
   {
     icon: "https://cdn-icons-png.flaticon.com/512/760/760457.png",
     title: "React js",
     tag: "frontend",
   },
-  {
-    icon: "https://cdn-icons-png.flaticon.com/512/29/29540.png",
-    title: "Jsp",
-    tag: "frontend",
-  },
+
   {
     icon: "https://img.icons8.com/color/512/bootstrap.png",
     title: "Bootstrap",
@@ -305,7 +306,11 @@ export const skills = [
     title: "Laravel",
     tag: "backend",
   },
-
+  {
+    icon: "https://cdn-icons-png.flaticon.com/512/29/29540.png",
+    title: "Jsp",
+    tag: "backend",
+  },
   {
     icon: "https://cdn-icons-png.flaticon.com/512/760/760457.png",
     title: "React native",
@@ -313,7 +318,7 @@ export const skills = [
   },
   {
     icon: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
-    title: "Java Native",
+    title: "Java",
     tag: "mobile",
   },
   {

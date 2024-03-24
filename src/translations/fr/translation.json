@@ -339,5 +339,7 @@
  ,  "getInTouch": {
     "h5": "Contactez-moi",
     "message": "Je reçois vos messages et je répondrai dès que possible si une adresse e-mail valide est fournie :)"
-}      
+}  ,
+"cv_fr": "../../assets/cherkani_aymen_cv_fr_compressed.pdf",
+"cv":"../../assets/cherkani_aymen_cv_fr_compressed.pdf"    
 }

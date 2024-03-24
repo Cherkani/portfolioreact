@@ -1,6 +1,7 @@
 
 {
 
+  
 "soloProjects" : [
   {
     "id": 1,
@@ -362,6 +363,10 @@
       ,"getInTouch": {
       "h5": "Get In Touch",
       "message":" I do receive your messages and will respond asap if the valid email is provided :)"   
-    }
+    },
+    "cv_en": "../../assets/cherkani_aymen_cv_en_compressed.pdf",
+    "cv":"../../assets/cherkani_aymen_cv_en_compressed.pdf"
+    
+  
   
 }
