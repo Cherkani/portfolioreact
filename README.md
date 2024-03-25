@@ -1,8 +1,9 @@
 # deploiment 
 
-portfolioreact-ruddy.vercel.app
 
-https://www.cherkani.me/
+
+<h1>https://www.cherkani.me/</h1>
+
 
 ![image](https://github.com/Cherkani/portfolioreact/assets/124716884/c539d3f9-2064-43ea-9de8-db4283488abe)
 
