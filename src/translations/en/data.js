@@ -280,6 +280,7 @@ export const skills = [
     title: "Sql Server",
     tag: "sgbd",
   },
+  /*
   {
     icon: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Apache-cassandra-icon.png",
     title: "cassandra",
@@ -290,6 +291,7 @@ export const skills = [
     title: "neo4j",
     tag: "sgbd",
   },
+  */
   {
     icon: "https://seeklogo.com/images/H/hbase-logo-386B408382-seeklogo.com.png",
     title: "hbase",
