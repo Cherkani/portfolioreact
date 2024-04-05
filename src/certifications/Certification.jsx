@@ -13,6 +13,7 @@ import image4 from "../assets/c5.jpeg";
 import image5 from "../assets/c6.png";
 import image6 from "../assets/c11.png";
 import image7 from "../assets/c12.png";
+import image9 from "../assets/v1.png";
 import image8 from "../assets/c13.png";
 
 import { useTranslation } from "react-i18next";
@@ -27,6 +28,7 @@ const Certification = () => {
     { original: image8 },
     { original: image4 },
     { original: image5 },
+    { original: image9 },
   ];
   const {t} = useTranslation("translation");
   return (
